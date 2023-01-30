@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joojdev's Skin Creator</title>
+  <script src="./main.js" defer></script>
+  <style>
+    canvas, img {
+      image-rendering: crisp-edges;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-crisp-edges;
+      image-rendering: -webkit-optimize-contrast;
+      -ms-interpolation-mode: nearest-neighbor;
+    }
+  </style>
+</head>
+<body>
+  <h1>Joojdev's Skin Creator</h1>
+
+  <form id="mainForm">
+    <fieldset>
+      <legend>Insert your image here!</legend>
+
+      <input type="file" id="imageInput" accept="image/jpeg, image/jpg, image/png" required>
+      <img src="#" alt="Preview" id="preview" style="height: 300px;">
+    </fieldset>
+
+    <button type="submit">Create!</button>
+  </form>
+
+  <canvas id="result" width="64" height="64" style="height: 400px;"></canvas>
+  <canvas id="memory" width="16" height="32" style="display: none;"></canvas>
+</body>
+</html>
