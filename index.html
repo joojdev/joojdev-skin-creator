@@ -21,7 +21,7 @@
 
   <form id="mainForm">
     <fieldset>
-      <legend>Insert your image here!</legend>
+      <legend><h2>Insert your image here!</h2></legend>
 
       <input type="file" id="imageInput" accept="image/jpeg, image/jpg, image/png" required>
       <img src="#" alt="Preview" id="preview" style="height: 300px;">
@@ -30,7 +30,11 @@
     <button type="submit">Create!</button>
   </form>
 
-  <canvas id="result" width="64" height="64" style="height: 400px;"></canvas>
+  <fieldset>
+    <legend><h2>The result will be here!</h2></legend>
+
+    <canvas id="result" width="64" height="64" style="height: 400px;"></canvas>
+  </fieldset>
   <canvas id="memory" width="16" height="32" style="display: none;"></canvas>
 </body>
 </html>
