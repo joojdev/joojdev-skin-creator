@@ -7,12 +7,12 @@ const memoryCanvasElement = document.querySelector('#memory')
 const resultCanvas = resultCanvasElement.getContext('2d')
 const memoryCanvas = memoryCanvasElement.getContext('2d')
 
-const image = new Image()
-image.src = './images/template.png'
+// const image = new Image()
+// image.src = './images/template.png'
 
-image.onload = () => {
-  resultCanvas.drawImage(image, 0, 0)
-}
+// image.onload = () => {
+//   resultCanvas.drawImage(image, 0, 0)
+// }
 
 mainForm.onsubmit = (event) => {
   event.preventDefault()
